@@ -4,12 +4,12 @@ app = Flask(__name__)
 
 # Global variable to store the latest sensor data
 sensor_data = {
-    "temperature": None,
-    "humidity": None,
-    "heartRate": None,
-    "fallDetected": None,
-    "cryDetected": None,
-    "sleepStage": None
+    "temperature": 37.5,
+    "humidity": 60.0,
+    "heartRate": 73,
+    "fallDetected": False,
+    "cryDetected": False,
+    "sleepStage": 1
 }
 
 # Route to handle data coming from ESP32
