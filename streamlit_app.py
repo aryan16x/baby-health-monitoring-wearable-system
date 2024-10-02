@@ -14,7 +14,7 @@ refresh_rate = st.sidebar.slider('Refresh Rate (seconds)', 1, 10, 5)
 # Function to fetch data from Flask
 def fetch_data():
     try:
-        response = requests.get('http://127.0.0.1:5000/fetch-data')
+        response = requests.get('https://baby-health-monitoring-wearable-device.onrender.com/fetch-data')
         response.raise_for_status()  # Raise an error for bad responses
         data = response.json()
         data['heartRate'] = float(data['heartRate'])
